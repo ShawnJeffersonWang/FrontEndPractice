@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>歌词滚动效果</title>
+    <!-- link:favicon -->
+    <link rel="shortcut icon" href="./assets/Spotify.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<!-- 只有两种状态的属性称之为布尔属性，controls是布尔属性 -->
+<!-- 1. 属性名 = "属性名" -->
+<!-- 2. 属性名 -->
+
+<body>
+    <audio controls src="./assets/形容.mp3"></audio>
+    <div class="container">
+        <!-- lorem 乱数假文,用来测试排版的 -->
+        <ul class="lrc-list"></ul>
+    </div>
+    <!-- 先引入data.js, index.js要用到里面的变量 -->
+    <script src="./js/data.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

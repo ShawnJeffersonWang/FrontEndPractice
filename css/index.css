@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* text-align表示对是行盒的子元素实现居中, audio是行盒, 所以居中 */
+/* div是块盒, 块盒的默认排列方式是撑满整个父元素的 */
+/* text-align可以被继承 */
+/* 而文字是行盒 */
+body {
+    background: #000;
+    color: #666;
+    text-align: center;
+
+    background-image: url("../assets/background.jpg");
+    background-size: cover; /*可选，使背景图像覆盖整个屏幕*/
+    background-repeat: no-repeat; /*可选，防止背景图像重复*/
+}
+
+audio {
+    width: 450px;
+    margin: 30px 0;
+}
+
+.container {
+    height: 420px;
+    overflow: hidden;
+    /* border: 2px solid #fff; */
+}
+
+.container ul {
+    /* border: 2px solid #fff; */
+    /* 只对数值类的属性有效 */
+    /* C3属性，实现动画效果，表示过渡，从一个CSS属性变到另外一个CSS属性不要这么突然 */
+    transition: 0.6s;
+    list-style: none;
+}
+
+.container li {
+    height: 30px;
+    /* border: 1px solid #fff */
+    line-height: 30px;
+    /* 必须放这，让过渡一直存在，而不是取消样式就没过渡了 */
+    transition: 0.2s;
+}
+
+.container li.active {
+    color: #fff;
+    /* font-size 会影响几何尺寸，导致重新reflow，会导致重新布局*/
+    /* C3属性，不影响主线程，不会reflow */
+    transform: scale(1.2);
+}

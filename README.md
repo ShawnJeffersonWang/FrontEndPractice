@@ -22,3 +22,8 @@ Clone the repository to your local machine:
 ```bash
 git clone https://github.com/ShawnJeffersonWang/LyricScroll.git
 cd LyricScroll
+```
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
